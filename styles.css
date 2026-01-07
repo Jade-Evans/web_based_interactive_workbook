@@ -1,17 +1,22 @@
+/*UNIVERSAL*/
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
-body{
+
+.pageContainer{
+    background-color: rgb(194, 209, 202);
     margin: 20px;
     padding: 10px;
-    background-color: rgb(194, 209, 202);
     border: double rgb(103, 142, 123) 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+
+
 }
 hgroup{
     display: flex;
