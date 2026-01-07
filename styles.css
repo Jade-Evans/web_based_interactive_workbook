@@ -21,6 +21,10 @@ hgroup{
 hgroup p{
     font-weight: 400;
 }
+.mainFacts{
+    text-align: left;
+    margin: 35px;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
