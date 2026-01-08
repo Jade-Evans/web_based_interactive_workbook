@@ -24,11 +24,87 @@
           </li>
         </ol>
       </li>
-      <li></li>
+      <li>Basic Table Syntax:
+        <table>
+          <tr>
+            <th>Syntax</th>
+            <th>Denotes</th>
+            <th>Used for</th>
+          </tr>
+          <tr>
+            <td> < table ></td>
+            <td>Table</td>
+            <td> All table content is enclosed within table tags.</td>
+          </tr>
+          <tr>
+          <tr> 
+            <td> < td > </td> 
+            <td>Table Data </td>
+            <td> Each td creates a new cell in the table. They automatically align horizontally.</td>
+          </tr>
+            <td> < tr > </td>
+            <td>Table Row</td>
+            <td>Enclose td cells to define separate rows of data.</td>
+          </tr>
+          <tr>
+            <td> < th > </td>
+            <td>Table Header</td>
+            <td>Defines headers in rows or columns. Font will appear bold to stand out. Great for accessibility as 
+              screen readers can associate a line of data with the header to enhance user's cognition of the information provided. 
+            </td>
+          </tr>
+        </table>
+      </li>
       <li></li>
       <li></li>
       <li></li>
     </ul>
+    <div class="practiceContent">
+      <div id="dogTablePractice1"></div>
+        <hgroup>
+          <h2>Practice Table Examples</h2>
+          <h3>Practice 1: Dog Table from Mdn Table Basics</h3>
+          <p>Simple exercise involving changing relevant tds to ths to denote headers.</p>
+        </hgroup>
+      
+        <table id="dogTable">
+          <tr>
+            <th>&nbsp;</th>
+            <th>Knocky</th>
+            <th>Flor</th>
+            <th>Ella</th>
+            <th>Juan</th>
+          </tr>
+          <tr>
+            <th>Breed</th>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Owner</th>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+          </tr>
+          <tr>
+            <th>Eating Habits</th>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+          </tr>
+        </table>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

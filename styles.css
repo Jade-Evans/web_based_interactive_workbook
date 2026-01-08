@@ -30,6 +30,9 @@ hgroup p{
     text-align: left;
     margin: 35px;
 }
+
+/*PRACTICAL EXERCISES*/
+/*02-SVG*/
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -48,5 +51,26 @@ hgroup p{
 .container div svg{
     
     background-color: lightblue;
+}
+
+/*03-TABLES*/
+/* table{
+    background-color: white;
+    border: 2px black solid;
+} */
+td,th{
+    border: 1px black solid;
+    padding: 5px;
+}
+td{
+    background-color: white;
+    
+}
+th{
+    background-color: grey;
+}
+
+#dogTable{
+    text-align: left;
 }
 
