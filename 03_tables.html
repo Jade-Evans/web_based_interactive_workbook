@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>TTables</title>
+  <title>Tables</title>
 </head>
 <body>
   <div class="pageContainer">
     <hgroup>
-      <h1>Tables</h1>
+      <h1 class="pageHeader">Tables</h1>
     </hgroup>
-    <ul class="mainFacts">
+    <ul class="keyFacts">
+      <h2 class="keyFactsHeader">Key Facts</h2>
       <li>Tables are useful for displaying and representing relationships in <strong>tabular data (data in rows and columns)</strong>.</li>
       <li>Tables <strong>should not</strong> be used for layouts, for the following reasons:
         <ol>
@@ -24,30 +25,34 @@
           </li>
         </ol>
       </li>
-      <li>Basic Table Syntax:
+    <li>Basic Table Syntax:
         <table>
           <tr>
             <th>Syntax</th>
             <th>Denotes</th>
             <th>Used for</th>
           </tr>
+
           <tr>
-            <td> < table ></td>
+            <td>&lt;table&gt;</td>
             <td>Table</td>
-            <td> All table content is enclosed within table tags.</td>
+            <td>All table content is enclosed within table tags.</td>
           </tr>
+
           <tr>
-          <tr> 
-            <td> < td > </td> 
-            <td>Table Data </td>
-            <td> Each td creates a new cell in the table. They automatically align horizontally.</td>
+            <td>&lt;td&gt;</td>
+            <td>Table Data</td>
+            <td>Each td creates a new cell in the table. They automatically align horizontally.</td>
           </tr>
-            <td> < tr > </td>
+
+          <tr>
+            <td>&lt;tr&gt;</td>
             <td>Table Row</td>
             <td>Enclose td cells to define separate rows of data.</td>
           </tr>
+
           <tr>
-            <td> < th > </td>
+            <td>&lt;th&gt;</td>
             <td>Table Header</td>
             <td>Defines headers in rows or columns. Font will appear bold to stand out. Great for accessibility as 
               screen readers can associate a line of data with the header to enhance user's cognition of the information provided. 
@@ -55,7 +60,7 @@
           </tr>
         </table>
       </li>
-      <li></li>
+      <li>"&amp;nbsp;" can be used to denote a blank data cell.</li>
       <li></li>
       <li></li>
     </ul>
@@ -107,9 +112,8 @@
     </div>
     <div id="animalTablePractice2">
         <hgroup>
-          <h2>Practice Table Examples</h2>
           <h3>Practice 2: Animal Table from Mdn Table Basics</h3>
-          <p>Simple exercise to practice colspan and rowspan.</p>
+          <p>Simple exercise to practice <strong>colspan</strong> and <strong>rowspan</strong>.</p>
         </hgroup>
       <table class="animalTable">
         <tr>
@@ -136,6 +140,74 @@
           <td>Rooster</td>
         </tr>
       </table>
+    </div>
+    <div id="subjectTablePractice3">
+       <hgroup>
+          <h3>Practice 3: Subject Table from Mdn Table Basics</h3>
+          <p>Simple exercise  to practice grouping columns using &lt;colgroup&gt; and &lt;col&gt;.</p>
+        </hgroup>
+        <h1>School language timetable</h1>
+        <table id="timetable">
+          <colgroup>
+            <col span="2" />
+            <col class="column-background" />
+            <col class="column-fixed-width" />
+            <col class="column-background" />
+            <col class="column-background-border" />
+            <col span="2" class="column-fixed-width" />
+          </colgroup>
+          <tr>
+            <td>&nbsp;</td>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <th>1st period</th>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th>2nd period</th>
+            <td>English</td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th>3rd period</th>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th>4th period</th>
+            <td>&nbsp;</td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>English</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+
     </div>
   </div>
   <script src="script.js"></script>

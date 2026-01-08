@@ -23,10 +23,18 @@ hgroup{
     flex-direction: column;
     gap: 5px;
 }
+
+.pageHeader{
+    background-color: whitesmoke;
+    font-size: 4rem;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
 hgroup p{
     font-weight: 400;
 }
-.mainFacts{
+.keyFacts{
     text-align: left;
     margin: 35px;
 }
@@ -54,26 +62,32 @@ hgroup p{
 }
 
 /*03-TABLES*/
-/* table{
+table{
     background-color: white;
     border: 2px black solid;
-} */
-table {
-    margin: 15px 0px;
+     margin: 15px 0px;
 }
+
 td,th{
     border: 1px black solid;
     padding: 5px;
 }
 td{
-    background-color: white;
-    
+    background-color: white;   
 }
 th{
     background-color: grey;
 }
-
-#dogTable{
-    text-align: left;
+.column-background{
+    background-color: rgb(222, 201, 222);
+}
+.column-fixed-width{
+    width: 40px;
+}
+    
+            
+.column-background-border{
+    background-color: lightblue;
+    border: solid 3px blue;
 }
 
