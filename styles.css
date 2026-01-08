@@ -58,6 +58,9 @@ hgroup p{
     background-color: white;
     border: 2px black solid;
 } */
+table {
+    margin: 15px 0px;
+}
 td,th{
     border: 1px black solid;
     padding: 5px;
