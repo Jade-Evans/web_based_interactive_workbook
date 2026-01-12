@@ -25,8 +25,9 @@
           </li>
         </ol>
       </li>
-    <li>Basic Table Syntax:
+    <li>
         <table>
+          <caption>Basic Table Syntax:</caption>
           <tr>
             <th>Syntax</th>
             <th>Denotes</th>
@@ -58,6 +59,22 @@
               screen readers can associate a line of data with the header to enhance user's cognition of the information provided. 
             </td>
           </tr>
+          <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Table Header Row</td>
+            <td>Provides better HTML organisational structure for screen readers by wrapping &lt;th&gt;
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Table Body</td>
+            <td>Provides better HTML organisational structure for screen readers by wrapping the main content of a table. </td>
+          </tr>
+           <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Table Footer</td>
+            <td>Provides better HTML organisational structure for screen readers by defining the table footer. </td>
+          </tr>
         </table>
       </li>
       <li>"&amp;nbsp;" can be used to denote a blank data cell.</li>
@@ -73,6 +90,7 @@
         </hgroup>
       
         <table id="dogTable">
+          <caption>Dog Breed Table</caption>
           <tr>
             <th>&nbsp;</th>
             <th>Knocky</th>
@@ -116,6 +134,7 @@
           <p>Simple exercise to practice <strong>colspan</strong> and <strong>rowspan</strong>.</p>
         </hgroup>
       <table class="animalTable">
+          <caption>Animal Table</caption>
         <tr>
           <th colspan="2">Animals</th>
         </tr>
@@ -148,6 +167,7 @@
         </hgroup>
         <h1>School language timetable</h1>
         <table id="timetable">
+          <caption>Subject Timetable</caption>
           <colgroup>
             <col span="2" />
             <col class="column-background" />
@@ -209,7 +229,24 @@
         </table>
 
     </div>
+    <div class="accessibilityNotes">
+    <h2>Notes on Accessibility</h2>
+      <p>Without considerate html design, screen reader users would find it very difficult to 
+        make sense of/access the data from a table. To optimise accessibility, developers should
+        above all ensure the following:
+      </p>
+      <ol>
+        <li>Always include a &lt;caption&gt; so the user knows what the table will be about
+          and can decide if they want to enter it.</li>
+        <li>Ensure headers are defined using &lt;th&gt;</li>
+        <li>Always define the scope attribute of a header aka scope="col" or scope ="row";
+          the screen reader can then announce when the user has navigated into different
+          column or row to enable them to make sense of the data. 
+        </li>
+      </ol>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
