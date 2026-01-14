@@ -29,53 +29,53 @@
     <li>
         <table>
           <caption>Basic Table Syntax:</caption>
-          <tr>
-            <th scope="col">Syntax</th>
-            <th scope="col">Denotes</th>
-            <th scope="col">Used for</th>
-          </tr>
-
-          <tr>
-            <th scope="row">&lt;table&gt;</th>
-            <td>Table</td>
-            <td>All table content is enclosed within table tags.</td>
-          </tr>
-
-          <tr>
-            <th scope="row">&lt;td&gt;</th>
-            <td>Table Data</td>
-            <td>Each td creates a new cell in the table. They automatically align horizontally.</td>
-          </tr>
-
-          <tr>
-            <th scope="row">&lt;tr&gt;</th>
-            <td>Table Row</td>
-            <td>Enclose td cells to define separate rows of data.</td>
-          </tr>
-
-          <tr>
-            <th scope="row">&lt;th&gt;</th>
-            <td>Table Header</td>
-            <td>Defines headers in rows or columns. Font will appear bold to stand out. Great for accessibility as 
-              screen readers can associate a line of data with the header to enhance user's cognition of the information provided. 
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">&lt;thead&gt;</th>
-            <td>Table Header Row</td>
-            <td>Provides better HTML organisational structure for screen readers by wrapping &lt;th&gt;
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">&lt;tbody&gt;</th>
-            <td>Table Body</td>
-            <td>Provides better HTML organisational structure for screen readers by wrapping the main content of a table. </td>
-          </tr>
-           <tr>
-            <th scope="row">&lt;tfoot&gt;</th>
-            <td>Table Footer</td>
-            <td>Provides better HTML organisational structure for screen readers by defining the table footer. </td>
-          </tr>
+          <thead>
+            <tr>
+              <th scope="col">Syntax</th>
+              <th scope="col">Denotes</th>
+              <th scope="col">Used for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">&lt;table&gt;</th>
+              <td>Table</td>
+              <td>All table content is enclosed within table tags.</td>
+            </tr>
+            <tr>
+              <th scope="row">&lt;td&gt;</th>
+              <td>Table Data</td>
+              <td>Each td creates a new cell in the table. They automatically align horizontally.</td>
+            </tr>
+            <tr>
+              <th scope="row">&lt;tr&gt;</th>
+              <td>Table Row</td>
+              <td>Enclose td cells to define separate rows of data.</td>
+            </tr>
+            <tr>
+              <th scope="row">&lt;th&gt;</th>
+              <td>Table Header</td>
+              <td>Defines headers in rows or columns. Font will appear bold to stand out. Great for accessibility as 
+                screen readers can associate a line of data with the header to enhance user's cognition of the information provided. 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">&lt;thead&gt;</th>
+              <td>Table Header Row</td>
+              <td>Provides better HTML organisational structure for screen readers by wrapping &lt;th&gt;
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">&lt;tbody&gt;</th>
+              <td>Table Body</td>
+              <td>Provides better HTML organisational structure for screen readers by wrapping the main content of a table. </td>
+            </tr>
+            <tr>
+              <th scope="row">&lt;tfoot&gt;</th>
+              <td>Table Footer</td>
+              <td>Provides better HTML organisational structure for screen readers by defining the table footer. </td>
+            </tr>
+          </tbody>
         </table>
       </li>
       
@@ -134,29 +134,33 @@
         </hgroup>
       <table class="animalTable">
           <caption>Animal Table</caption>
-        <tr>
-          <th scope="col" colspan="2">Animals</th>
-        </tr>
-        <tr>
-          <th scope="col" colspan="2">Hippopotamus</th>
-        </tr>
-        <tr>
-          <th scope="col" rowspan="2">Horse</th>
-          <td>Mare</td>
-        </tr>
-        <tr>
-          <td>Stallion</td>
-        </tr>
-        <tr>
-          <th scope="col" colspan="2">Crocodile</th>
-        </tr>
-        <tr>
-          <th scope="col" rowspan="2">Chicken</th>
-          <td>Hen</td>
-        </tr>
-        <tr>
-          <td>Rooster</td>
-        </tr>
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Animals</th>
+          </tr>
+          <tr>
+            <th scope="col" colspan="2">Hippopotamus</th>
+          </tr>
+          <tr>
+            <th scope="col" rowspan="2">Horse</th>
+            <td>Mare</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stallion</td>
+          </tr>
+          <tr>
+            <th scope="col" colspan="2">Crocodile</th>
+          </tr>
+          <tr>
+            <th scope="col" rowspan="2">Chicken</th>
+            <td>Hen</td>
+          </tr>
+          <tr>
+            <td>Rooster</td>
+          </tr>
+        </tbody>
       </table>
     </div>
     <div id="subjectTablePractice3">
@@ -175,56 +179,60 @@
             <col class="column-background-border" />
             <col span="2" class="column-fixed-width scope="col"" />
           </colgroup>
-          <tr>
-            <td>&nbsp;</td>
-            <th scope="col">Mon</th>
-            <th scope="col">Tues</th>
-            <th scope="col">Wed</th>
-            <th scope="col">Thurs</th>
-            <th scope="col">Fri</th>
-            <th scope="col">Sat</th>
-            <th scope="col">Sun</th>
-          </tr>
-          <tr>
-            <th>1st period</th>
-            <td>English</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>German</td>
-            <td>Dutch</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <th scope="row">2nd period</th>
-            <td>English</td>
-            <td>English</td>
-            <td>&nbsp;</td>
-            <td>German</td>
-            <td>Dutch</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <th scope="row">3rd period</th>
-            <td>&nbsp;</td>
-            <td>German</td>
-            <td>&nbsp;</td>
-            <td>German</td>
-            <td>Dutch</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <th scope="row">4th period</th>
-            <td>&nbsp;</td>
-            <td>English</td>
-            <td>&nbsp;</td>
-            <td>English</td>
-            <td>Dutch</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
+          <thead>
+            <tr>
+              <td>&nbsp;</td>
+              <th scope="col">Mon</th>
+              <th scope="col">Tues</th>
+              <th scope="col">Wed</th>
+              <th scope="col">Thurs</th>
+              <th scope="col">Fri</th>
+              <th scope="col">Sat</th>
+              <th scope="col">Sun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1st period</th>
+              <td>English</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>German</td>
+              <td>Dutch</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th scope="row">2nd period</th>
+              <td>English</td>
+              <td>English</td>
+              <td>&nbsp;</td>
+              <td>German</td>
+              <td>Dutch</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th scope="row">3rd period</th>
+              <td>&nbsp;</td>
+              <td>German</td>
+              <td>&nbsp;</td>
+              <td>German</td>
+              <td>Dutch</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th scope="row">4th period</th>
+              <td>&nbsp;</td>
+              <td>English</td>
+              <td>&nbsp;</td>
+              <td>English</td>
+              <td>Dutch</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
         </table>
 
     </div>
