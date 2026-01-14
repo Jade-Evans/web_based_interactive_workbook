@@ -5,25 +5,28 @@
     padding: 0px;
 }
 
-.pageContainer{
-    background-color: rgb(194, 209, 202);
-    margin: 20px;
-    padding: 10px;
+.pageContainer, .contentContainer{    
+    margin: 3%;
+    padding: 2%;
     border: double rgb(103, 142, 123) 4px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
+}
+.pageContainer{
+    background-color: rgb(194, 209, 202);
     text-align: center;
-
-
-
+}
+.contentContainer{
+    background-color: rgb(227, 244, 236);
+    text-align: left;
 }
 hgroup{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 1rem;
 }
-
 .pageHeader{
     background-color: whitesmoke;
     font-size: 4rem;
@@ -31,8 +34,8 @@ hgroup{
     border-radius: 8px;
     margin-top: 20px;
 }
-hgroup p{
-    font-weight: 400;
+.subheading{
+    margin: 1%;
 }
 .keyFacts{
     text-align: left;
@@ -40,6 +43,7 @@ hgroup p{
 }
 .accessibilityNotes{
     background-color:rgb(253, 195, 195);
+    border: dotted 0.5rem white;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -53,6 +57,10 @@ hgroup p{
 .accessibilityNotes ol{
     list-style-position: inside;
     
+}
+caption{
+    margin: 1%;
+    color:rgb(40, 65, 57);
 }
 
 /*PRACTICAL EXERCISES*/
