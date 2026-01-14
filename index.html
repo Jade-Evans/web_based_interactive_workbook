@@ -7,24 +7,37 @@
   <title>Contents & Progress</title>
 </head>
 <body>
-  <div class="pageContainer">
+  <div class="contentContainer">
     <hgroup>
-      <h1>My FullStack Workbook</h1>
-    <p>A learning journal to track my progress and reinforce learning throughout The Odin Project’s
-      Full Stack JavaScript curriculum.</p>
+      <h1 class="pageHeader">My Interactive Workbook</h1>
+      <p>This web-based, interactive learning journal is designed as a resource for independent learners of web development
+        to track their progress. 
+      </p>
     </hgroup>
-    <div class="contentsContainer">
+    <div class="pageContainer">
+      <div class="pageIntro"></div>
+        <h2 class="subheading">Customise Your Learning</h2>
+        <p>The great thing about learning independently is being able to choose from the wealth of
+          resources available to us.<br> 
+          The table below allows you to keep a record of your learning, without being 
+          restrictive to one course. <br>
+          Not only does it enable you to track your progress of a particular module, 
+          over time you can build up a sense of whether certain resources/methods are 
+          more suitable to you using the charts below. </p>
       <table>
+        <caption>Learning Progress Tracker</caption>
         <tr>
-          <th>Module</th>
-          <th>section</th>
-          <th>Progress</th>
-          <th>Date</th>
-          <th>Notes</th>
+          <th scope="col">Module</th>
+          <th scope="col">section</th>
+          <th scope="col">Course</th>
+          <th scope="col">Progress</th>
+          <th scope="col">Date</th>
+          <th scope="col">Notes</th>
         </tr>
         <tr>
           <td><a href="01_emmet.html">Emmet</a></th>
           <td>Intermediate HTML Concepts</td>
+          <td>The Odin Project JS Path</td>
           <td><fieldset id="progressOptions" class="options hidden">
                 <select id="progressOptions" name="progressOptions">
                     <option value="notStarted">Not Started</option>
@@ -39,6 +52,7 @@
         <tr>
           <td><a href="02_svg.html">SVGs</a></th>
           <td>Intermediate HTML Concepts</td>
+          <td>The Odin Project JS Path</td>
           <td><fieldset id="progressOptions" class="options hidden">
                 <select id="progressOptions" name="progressOptions">
                     <option value="notStarted">Not Started</option>
@@ -53,6 +67,7 @@
         <tr>
           <td><a href="03_tables.html">Tables</a></th>
           <td>Intermediate HTML Concepts</td>
+          <td>The Odin Project JS Path</td>
           <td><fieldset id="progressOptions" class="options hidden">
                 <select id="progressOptions" name="progressOptions">
                     <option value="notStarted">Not Started</option>
