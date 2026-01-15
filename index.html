@@ -4,87 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <title>Contents & Progress</title>
 </head>
 <body>
+  <header>
+    <div id="logo">Interactive WorkBook</div>
+    <nav>
+        <ul class ="nav-bar">
+            <li><a  href = "index.html">home</a></li>
+            <li><a  href = "00_contents.html">study tracker</a></li>
+            <li><a  href = "XlearningJournal.html">your learning journal</a></li>
+            <li><a  href="Yresources.html">resources</a></li>
+            <li><a  href="Zsettings.html">settings</a></li>
+        </ul>
+    </nav>
+  </header>
+  <body>
+  <header>
+    <div class="logo">Interactive WorkBook</div>
+    <nav>
+        <ul class ="nav-bar">
+            <li><a  href = "index.html">home</a></li>
+            <li><a  href = "00_contents.html">study tracker</a></li>
+            <li><a  href = "XlearningJournal.html">your learning journal</a></li>
+            <li><a  href="Yresources.html">resources</a></li>
+            <li><a  href="Zsettings.html">settings</a></li>
+        </ul>
+    </nav>
+  </header>
   <div class="contentContainer">
     <hgroup>
-      <h1 class="pageHeader">My Interactive Workbook</h1>
-      <p>This web-based, interactive learning journal is designed as a resource for independent learners of web development
-        to track their progress. 
-      </p>
+      <h1 class="pageHeader">Skillroots</h1>
+      <h2>Learn independently 🌱 Grow intentionally</h2>
+      <button class="signup">Sign Up</button>
+      <button class="login">Log In</button>
     </hgroup>
-    <div class="pageContainer">
-      <div class="pageIntro"></div>
-        <h2 class="subheading">Customise Your Learning</h2>
-        <p>The great thing about learning independently is being able to choose from the wealth of
-          resources available to us.<br> 
-          The table below allows you to keep a record of your learning, without being 
-          restrictive to one course. <br>
-          Not only does it enable you to track your progress of a particular module, 
-          over time you can build up a sense of whether certain resources/methods are 
-          more suitable to you using the charts below. </p>
-      <table>
-        <caption>Learning Progress Tracker</caption>
-        <thead>
-          <tr>
-            <th scope="col">Module</th>
-            <th scope="col">section</th>
-            <th scope="col">Course</th>
-            <th scope="col">Progress</th>
-            <th scope="col">Date</th>
-            <th scope="col">Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="01_emmet.html">Emmet</a></th>
-            <td>Intermediate HTML Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>
-          <tr>
-            <td><a href="02_svg.html">SVGs</a></th>
-            <td>Intermediate HTML Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>
-          <tr>
-            <td><a href="03_tables.html">Tables</a></th>
-            <td>Intermediate HTML Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>  
-        </tbody>
-      </table>
-    </div>
+
   </div>
   <script src="script.js"></script>
 </body>
