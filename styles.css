@@ -15,6 +15,9 @@ header, footer{
     align-items: center;
     border-radius: none;
 }
+main{
+    margin: 2rem;
+}
 .logo{
     font-size: 3rem;
 }
