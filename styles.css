@@ -2,21 +2,21 @@
 *{
     font-family: montserrat;
     font-weight: 100;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     
 }
 header{
     background-color: rgb(61, 75, 70);
-    box-shadow: 0.5em 0.5em 0.95em rgb(133, 146, 146);
-    padding: 1em 1.5em;
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: none;
 }
 .logo{
-    font-size: 24px;
+    font-size: 3rem;
 }
 .nav-bar{
     display: flex;
@@ -25,15 +25,13 @@ header{
 }
 .nav-bar a{
     text-decoration: none;
-    color: white;
-    
+    color: white;   
 }
-
 .pageContainer, .contentContainer{    
-    margin: 3%;
-    padding: 2%;
-    box-shadow: 0.5em 0.5em 0.95em rgb(133, 146, 146);
-    border-radius: 15px;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -56,23 +54,57 @@ hgroup{
     background-color: whitesmoke;
     font-size: 3.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 1rem;
     margin: 1rem;
 }
 
 /*INDEX/LANDING PAGE CSS*/
+.landingPageContentContainer{
+    width: 90%;
+    margin: 2rem;
+}
+#landingPageHeader{
+    font-size: 6rem;
+    font-weight:100;
+    margin:0;
+    padding: 0;
+    color: white;
+    
+}
+#landingPageContent{
+    gap: 0;
+    background-color: rgb(197, 211, 205);
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    color:rgb(61, 75, 70);
+    padding: 3rem;
+    margin: 8rem 6rem;
+    border-radius: 1rem;
+}
+.landingPageButtonDiv{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
 
+.landingPageButtonDiv button{
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+    background-color: rgb(61, 75, 70);
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    border-radius: 1rem;
+}
 .subheading{
-    margin: 1%;
+    margin: 1rem;
 }
 .keyFacts{
     text-align: left;
-    margin: 35px;
+    margin: 2rem;
 }
 .accessibilityNotesContent, .sustainabilityNotesContent{
     background-color:rgb(194, 211, 204);
-    border: dotted 0.5rem white;
-    border-radius: 15px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -99,13 +131,13 @@ caption{
 .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20.5rem;
     justify-content: center;
 }
 .container > div{
     flex: 1;
-    border: solid 1px lightblue;
-    padding: 3px;
+    border: solid 1px0.5rem lightblue;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -119,13 +151,13 @@ caption{
 /*03-TABLES*/
 table{
     background-color: white;
-    border: 2px black solid;
-     margin: 15px 0px;
+    border: 0.1rem black solid;
+     margin: 1.5rem 0rem;
 }
 
 td,th{
-    border: 1px black solid;
-    padding: 5px;
+    border: 0.1rem black solid;
+    padding: 1rem;
 }
 td{
     background-color: white;   
@@ -137,12 +169,12 @@ th{
     background-color: rgb(222, 201, 222);
 }
 .column-fixed-width{
-    width: 40px;
+    width: 2rem;
 }
     
             
 .column-background-border{
     background-color: lightblue;
-    border: solid 3px blue;
+    border: solid 0.5rem blue;
 }
 
