@@ -29,6 +29,14 @@ main{
 .nav-bar a{
     text-decoration: none;
     color: white;   
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    
+}
+.nav-bar a:hover{
+    background-color:rgb(100, 123, 115);
+    box-shadow: 0.3rem 0.3rem 0.2rem rgb(133, 146, 146);
+    transition: 0.2s ease;
 }
 .pageContainer, .contentContainer{    
     margin: 1rem;
