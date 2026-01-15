@@ -9,11 +9,18 @@
 header, footer{
     background-color: rgb(61, 75, 70);
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-radius: none;
+    color: white;
+}
+header{
+    justify-content: space-between;
+}
+footer{
+    justify-content: center;
+    color: white;
 }
 main{
     margin: 2rem;
@@ -34,9 +41,9 @@ main{
     
 }
 .nav-bar a:hover{
-    background-color:rgb(100, 123, 115);
-    box-shadow: 0.3rem 0.3rem 0.2rem rgb(133, 146, 146);
-    transition: 0.2s ease;
+    font-weight: 400;
+    background-color: rgb(41, 46, 45);
+    transition: 0.05s ease;
 }
 .pageContainer, .contentContainer{    
     margin: 1rem;
@@ -99,12 +106,19 @@ hgroup{
 
 .landingPageButtonDiv button{
     padding: 0.5rem 0.75rem;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 200;
     color: white;
     background-color: rgb(61, 75, 70);
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
     border-radius: 1rem;
+}
+
+nav-bar a, .landingPageButtonDiv button:hover{
+    font-weight: 400;
+    background-color: rgb(41, 46, 45);
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(71, 78, 78);
+    transition: 0.1s ease;
 }
 .subheading{
     margin: 1rem;
