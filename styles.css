@@ -6,7 +6,7 @@
     padding: 0;
     
 }
-header{
+header, footer{
     background-color: rgb(61, 75, 70);
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
     padding: 1rem 1.5rem;
