@@ -145,10 +145,13 @@ nav-bar a, .landingPageButtonDiv button:hover{
 }
 table {
   border-collapse: collapse;
+  box-shadow: 0.5rem 0.5rem 0.95rem rgb(71, 78, 78);
 }
 caption{
     margin: 1%;
     color:rgb(40, 65, 57);
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 /*PRACTICAL EXERCISES*/
@@ -176,12 +179,13 @@ caption{
 /*03-TABLES*/
 table{
     background-color: white;
-    border: 0.1rem black solid;
-     margin: 1.5rem 0rem;
+    border-style:none;
+
+    margin: 1.5rem 0rem;
 }
 
 td,th{
-    border: 0.1rem black solid;
+    border-style: none;
     padding: 1rem;
 }
 td{
@@ -189,6 +193,8 @@ td{
 }
 th{
     background-color: grey;
+    font-weight: 400;
+    text-align: center;
 }
 .column-background{
     background-color: rgb(222, 201, 222);
