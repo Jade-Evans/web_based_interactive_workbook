@@ -66,10 +66,8 @@ hgroup{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 .pageHeader{
-    background-color: whitesmoke;
     font-size: 3.5rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
@@ -123,10 +121,43 @@ nav-bar a, .landingPageButtonDiv button:hover{
 .subheading{
     margin: 1rem;
 }
-.keyFacts{
-    text-align: left;
-    margin: 2rem;
+
+/*Module Template*/
+.keyFactsContainer{
+    background-color: rgb(205, 210, 208);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    
 }
+.keyFactsIntroText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+.notebook-list {
+  background: #f1eee3; /* soft yellowed paper */
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+
+  /* faint horizontal lines */
+  background-image: 
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 100% 2rem;
+
+  /* notebook margin line */
+  border-left: 4px solid rgba(200, 80, 80, 0.4);
+  margin: 1.5rem 0;
+}
+
+.notebook-list li {
+  padding: 0.4rem 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
 .accessibilityNotesContent, .sustainabilityNotesContent{
     background-color:rgb(194, 211, 204);
     border-radius: 1rem;
@@ -139,7 +170,7 @@ nav-bar a, .landingPageButtonDiv button:hover{
     justify-content: center;
 
 }
-.accessibilityNotes ol{
+ol{
     list-style-position: inside;
     
 }
@@ -164,7 +195,7 @@ caption{
 }
 .container > div{
     flex: 1;
-    border: solid 1px0.5rem lightblue;
+    border: solid 0.5rem lightblue;
     padding: 1rem;
     display: flex;
     flex-direction: column;
