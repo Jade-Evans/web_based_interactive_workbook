@@ -23,7 +23,7 @@
   </header>
   <main>
       <hgroup>
-        <h1 class="pageHeader">RESOURCE LIBRARY</h1>
+        <h1 class="pageHeader">LEARNING LIBRARY</h1>
       </hgroup>
       <div class="pageIntro">🌿 Placeholder Description for the Resources Library
         This library will become a central hub for all supporting materials collected throughout the workbook.
@@ -31,74 +31,71 @@
       </div> 
       <div class="futureVision">
         <p>🌿 How the flow works (your vision, clarified)
-1. User works through a module (e.g., Tables)
-Inside the module, they have:
-- Key Facts → their own concise bullet notes
-- Exercises → practice
-- Accessibility Notes → what they learned about making tables accessible
-- Sustainability Notes → what they learned about making tables efficient/maintainable
-These notes are personal, not pre‑written.
-2. When they write Accessibility or Sustainability notes…
-Those notes are:
-- saved inside the module (so they stay contextual)
-- also duplicated into the Library under the relevant category
-So the Tables module might add:
-- “Use <caption> to describe table purpose” → Accessibility Library
-- “Avoid layout tables to reduce maintenance overhead” → Sustainability Library
-3. The Library becomes a searchable knowledge base
-The sidebar has tabs like:
-- Accessibility
-- Sustainability
-- Resources
-- (maybe later: Performance, UX, etc.)
-Inside each tab is a searchable list of all notes the user has ever written, across all modules.
-Searching “tables” would show:
-- Accessibility notes tagged “tables”
-- Sustainability notes tagged “tables”
-- Any resources tagged “tables”
-Searching “accessibility” would show:
-- All accessibility notes from all modules
-- All resources tagged accessibility
-4. Modules and Library stay in sync
-Modules = where you learn and write
-Library = where you store and retrieve
-This is exactly how a real personal knowledge system works (like Obsidian, Notion, or Zettelkasten), but in a lightweight, custom way.
+        1. User works through a module (e.g., Tables)
+        Inside the module, they have:
+        - Key Facts → their own concise bullet notes
+        - Exercises → practice
+        - Accessibility Notes → what they learned about making tables accessible
+        - Sustainability Notes → what they learned about making tables efficient/maintainable
+        These notes are personal, not pre‑written.
+        2. When they write Accessibility or Sustainability notes…
+        Those notes are:
+        - saved inside the module (so they stay contextual)
+        - also duplicated into the Library under the relevant category
+        So the Tables module might add:
+        - “Use <caption> to describe table purpose” → Accessibility Library
+        - “Avoid layout tables to reduce maintenance overhead” → Sustainability Library
+        3. The Library becomes a searchable knowledge base
+        The sidebar has tabs like:
+        - Accessibility
+        - Sustainability
+        - Resources
+        - (maybe later: Performance, UX, etc.)
+        Inside each tab is a searchable list of all notes the user has ever written, across all modules.
+        Searching “tables” would show:
+        - Accessibility notes tagged “tables”
+        - Sustainability notes tagged “tables”
+        - Any resources tagged “tables”
+        Searching “accessibility” would show:
+        - All accessibility notes from all modules
+        - All resources tagged accessibility
+        4. Modules and Library stay in sync
+        Modules = where you learn and write
+        Library = where you store and retrieve
+        This is exactly how a real personal knowledge system works (like Obsidian, Notion, or Zettelkasten), but in a lightweight, custom way.
 
-🌱 Why this is a brilliant design
-It gives you:
-- Contextual learning (notes live inside modules)
-- Global retrieval (notes also live in the library)
-- Searchability (find anything by keyword)
-- Tagging (module name becomes a tag)
-- Cross‑topic insight (see patterns across modules)
-- Future‑proofing (easy to expand later)
-And it fits your plant metaphor beautifully:
-- Modules = where seeds are planted
-- Library = where the garden grows and connects
+        🌱 Why this is a brilliant design
+        It gives you:
+        - Contextual learning (notes live inside modules)
+        - Global retrieval (notes also live in the library)
+        - Searchability (find anything by keyword)
+        - Tagging (module name becomes a tag)
+        - Cross‑topic insight (see patterns across modules)
+        - Future‑proofing (easy to expand later)
+        And it fits your plant metaphor beautifully:
+        - Modules = where seeds are planted
+        - Library = where the garden grows and connects
 
-🌼 What this means technically (simple version)
-You don’t need to build the full system now.
-But the architecture is clear:
-When the user writes a note in a module:
-- Save it to that module’s data object
-- Also push it into a global array like:
-accessibilityNotes.push({
-  text: "Use <caption> to describe table purpose",
-  module: "Tables",
-  tags: ["tables", "accessibility", "html"]
-});
-
-
-Later, the Library page:
-- loads all notes
-- filters by category
-- filters by search input
-- displays results
-This is very achievable with fundamentals.
+        🌼 What this means technically (simple version)
+        You don’t need to build the full system now.
+        But the architecture is clear:
+        When the user writes a note in a module:
+        - Save it to that module’s data object
+        - Also push it into a global array like:
+        accessibilityNotes.push({
+          text: "Use <caption> to describe table purpose",
+          module: "Tables",
+          tags: ["tables", "accessibility", "html"]
+        });
 
 
-</p>
-      </div>
+        Later, the Library page:
+        - loads all notes
+        - filters by category
+        - filters by search input
+        - displays results
+            This is very achievable with fundamentals.</p>
+    </div>
   </main>
   <footer>
     <p>🌱SKILLROOTS &copy; 2026</p>

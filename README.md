@@ -4,6 +4,15 @@ Each module includes key facts, worked examples, accessibility notes, and areas 
 Future development plans include making the workbook more interactive and reusable — allowing users to add their own modules, enter notes, choose display preferences, and save their data directly in the browser using localStorage, without needing to edit the HTML. This will help transform the workbook from a personal learning tool into a more general, customisable platform for independent study.
 By combining clear documentation, practical examples, and user‑input elements, this workbook acts as both a learning tool and a growing record of my independent study, problem‑solving approach, and commitment to accessible, well‑structured web development.
 
+## Project Evolution (Short Summary)
+1. Static HTML Pages →
+Individual .html files for each module. Fully manual, duplicated structure, hard to maintain.
+2. Reusable Module Template →
+One template + modules.js for content. Cleaner, scalable, but still rigid with fixed sections.
+3. Fluid Block‑Based Canvas →
+A blank workspace where users add blocks (notes, code, images, etc.). Fully flexible, future‑proof, user‑driven.
+
+
 # Tech Stack
 - HTML5 – semantic structure
 - CSS3 – styling and layout
