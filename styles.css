@@ -163,7 +163,7 @@ nav-bar a, .landingPageButtonDiv button:hover{
     font-weight: 400;
     color: white;
 }
-.moduleDescription{
+.moduleDetails{
     color: white;
     background-color: rgb(142, 158, 152);
     border-radius: 1rem;
@@ -174,7 +174,12 @@ nav-bar a, .landingPageButtonDiv button:hover{
     width: 90%;
     gap: 2rem;
 }
-.moduleDescription h3{
+.detail{
+    display: flex;
+    gap: 0.25rem;
+    align-items: last baseline;
+}
+.moduleDetails h3{
     font-weight: 200;
     /* font-style: bold; */
 }
