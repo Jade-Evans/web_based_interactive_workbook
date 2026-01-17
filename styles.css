@@ -140,12 +140,22 @@ nav-bar a, .landingPageButtonDiv button:hover{
     margin: auto;
     width: 95%;
 }
-.sidebar{
-    position: fixed;
+#workbookMainContainer{
+    display: flex;
+    flex-direction: column;
+}
+#workbookMainContent{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+#workbookSideBar{
+    flex: 1;
     background-color: teal;
     color: white;
-    width: 20%;
-    height: 100%;
+    max-width: 20%;
+    
 }
 .module_container{
     background-color: rgb(205, 210, 208);
@@ -181,9 +191,8 @@ nav-bar a, .landingPageButtonDiv button:hover{
 }
 .moduleDetails h3{
     font-weight: 200;
-    /* font-style: bold; */
 }
-.moduleTemplateIntro{
+.workspaceIntro{
     padding: 1rem;
     margin: 0.25rem 0.5rem;
     font-weight: 200;
