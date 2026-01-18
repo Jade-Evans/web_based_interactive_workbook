@@ -3,31 +3,22 @@ body {
   flex-direction: column;
   height: 100vh; /*take full height of viewport on any device*/
   overflow: hidden; /*prevents entire page from scrolling (which would scroll h & f - not desired*/
+  font-family: montserrat;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
 }
-
-
-
-/* UNIVERSAL
-*{
-    font-family: montserrat;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-    
-}
-body{
-    overflow: hidden;
-}
-header, footer{
-    background-color: rgb(61, 75, 70);
-    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
-    padding: 0.25rem;
+header, footer {
+    z-index: 10;/*keeps h & f above rest of content*/
+    position: sticky;
     display: flex;
     align-items: center;
     color: white;
-    position: sticky;
-    width: 100%;
+    background-color: rgb(61, 75, 70);
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    padding: 0.25rem;
 }
+
 header{
     justify-content: space-between;
     top: 0;    
@@ -35,6 +26,11 @@ header{
 footer{
     justify-content: center;
     bottom: 0;   
+}
+main{
+    display: flex;
+    flex: 1; /*enables main to take up the rest of the available space of body container*/
+    overflow: hidden;/*main stays fixed and houses the aside/section that scroll*/
 }
 .logo{
     font-size: 3rem;
