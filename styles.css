@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /*take full height of viewport on any device*/
+  overflow: hidden; /*prevents entire page from scrolling (which would scroll h & f - not desired*/
+}
+
+
+
 /* UNIVERSAL
 *{
     font-family: montserrat;
