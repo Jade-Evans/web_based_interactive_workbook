@@ -12,3 +12,6 @@ Steps to overcome this issue: create one master module_template HTML, a modules.
 ## FOOTER NOT FULL LENGTH OR FIXED AT DESIRED BOTTOM OF PAGE
 https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 I used width 100% to stretch the footer along the whole length of the window, and bottom: 0, left: 0 to position correctly at the bottom of the page. 
+
+## CREATE A RESPONSIVE LAYOUT WITH SIDEBAR
+https://kinsta.com/blog/responsive-web-design/
