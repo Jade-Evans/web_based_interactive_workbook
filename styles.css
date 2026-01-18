@@ -15,7 +15,7 @@ header, footer {
     align-items: center;
     color: white;
     background-color: rgb(61, 75, 70);
-    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    
     padding: 0.25rem;
 }
 
@@ -31,6 +31,33 @@ main{
     display: flex;
     flex: 1; /*enables main to take up the rest of the available space of body container*/
     overflow: hidden;/*main stays fixed and houses the aside/section that scroll*/
+}
+aside{
+    flex:1;
+    background-color: rgb(77, 111, 99);
+    color: white;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    
+}
+#toolkit{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#toolkit li:hover{
+    background-color: rgb(45, 63, 57);
+    
+
+}
+
+section{
+    flex:4;
+    overflow-y: auto;
+    margin: 0.5rem;
 }
 .logo{
     font-size: 3rem;
@@ -54,7 +81,7 @@ main{
     background-color: rgb(41, 46, 45);
     transition: 0.05s ease;
 }
-.pageContainer, .contentContainer{    
+/* .pageContainer, .contentContainer{    
     margin: 1rem;
     padding: 1rem;
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
@@ -62,7 +89,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;   
-}
+} */
 .pageContainer{
     background-color: rgb(194, 209, 202);
     text-align: center;
