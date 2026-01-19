@@ -56,46 +56,56 @@
             <li>
               Developers have 3 main approaches to overcome these issues, as outlined below:
               <table>
-                <caption>Table summarising the three approaches to overcoming default CSS styles. <a href="https://mattbrictson.com/blog/css-normalize-and-reset">Useful
+                <caption>Table summarising the three approaches to overcoming default CSS styles. <a href="https://mattbrictson.com/blog/css-normalize-and-reset" target="_blank"
+                  rel="noopener noreferrer">Useful
                   Explanation on CSS Reset and Normalize</a>
                 </caption>
 
                 <thead>
                   <tr>
                     <th scope="col">Name of approach</th>
-                    <th scope="col">Explanation</th>
+                    <th scope="col">Philosophy</th>
                     <th scope="col">Origin</th>
                     <th scope="col">Link to Code</th>
+                    <th scope="col">Pros</th>
+                    <th scope="col">Cons</th>
+  
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
                     <th scope="row">Normalize.css</th>
-                    <td>
-                      Provide a consistent cross‑browser baseline without wiping out all default styles.
-                      Normalize.css makes browsers render all elements more consistently and in line with
-                      modern standards. It precisely targets only the styles that need normalizing.
+                    <td>“Fix inconsistencies”: Designed to fix inconsistencies across browser style defaults whilst retaining useful features/semantics"
                     </td>
                     <td>Released: 2011 <br>Creators: Nicolas Gallagher and Jonathan Neal</td>
-                    <td><a href="https://necolas.github.io/normalize.css/">Normalize.css</a></td>
+                    <td><a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener noreferrer">Normalize.css</a></td>
+                    <td>Preserves semantics so the user doesn't have to rewrite everything</td>
+                    <td>Doesn't give entire control/clean slate</td>
                   </tr>
-
                   <tr>
                     <th scope="row">CSS Resets</th>
                     <td>
+                      "Erase everything and start from scratch":
                       Strip away essentially all CSS defaults across all browsers, providing a clean slate
                       upon which to add CSS styling.
                     </td>
                     <td>Released: 2007 <br>Created by: Eric Meyer (widely accepted as standard)</td>
                     <td><a href="https://meyerweb.com/eric/tools/css/reset/reset.css">Reset.css</a></td>
+                    <td>user defines entire CSS - has total control</td>
+                    <td>Destructive approach; eliminates useful CSS content that then needs to be reinserted</td>
                   </tr>
 
                   <tr>
                     <th scope="row">Hybrid</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>"Fix + clean + modern defaults":Merges the two approaches; it fixes/removes cross-browser inconsistencies, removes unwanted
+                      styling and adds opinionated defaults it assumes are most widely accepted by today's dev standards (i.e. *{box-sizing: border-box;} or body{margin:0}). </td>
+                    <td>Term coined by Mark - Matt Brictson in 2023 but approach had been adopted by
+                      frameworks such as Tailwind prior to this.
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>Modern, accessible, predictable</td>
+                    <td>Can be opinionated</td>
                   </tr>
                 </tbody>
               </table>
