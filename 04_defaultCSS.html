@@ -30,35 +30,44 @@
           <li class="tool">RESOURCE LOG</li>
         </ul>
       </aside>
+
       <section>
         <hgroup>
-          <h1 class="pageHeader moduleHeader">MY VIRTUAL WORKBOOK</h1>
-          <h2 class="pageTagline">Quiet Focus🍃Steady Progress</h2>
+          <h1 class="virtualWorkspaceHeader">MY VIRTUAL WORKSPACE</h1>
+          <h2 class="virtualWorkspaceTagline">Quiet Focus🍃Steady Progress</h2>
         </hgroup>
-        <div class="moduleDetails"> 
-          <div class="detail"><h3 class="moduleName">TOPIC:</h3><p caddlass="topicName">Default CSS Styles</p></div>
-          <div class="detail"><h3 class="sectionName">COURSE DETAILS:</h3><p class="courseDetails">The Odin Project (JS FS), Intermediate CSS</p></div>
+
+        <div class="moduleDetails">
+            <p class="moduleName">Default CSS Styles</p>
+            <p class="courseDetails">The Odin Project - JavaScript Full Stack - Intermediate CSS</p>
+          </div>
         </div>
+
         <div class="keyFacts">
           <h2 class="keyFactsTitle">5 Key Facts:</h2>
+
           <ol>
             <li>
-              To ensure <span><strong>legibility, responsive and accessible styling by default,</strong></span>
-              browsers have their own default stylesheet.Egs. include the varying font-sizes of h1, h2 etc. or the automatic styling
-              of a button element.
-            </li>
-            <li>
-              Default CSS can cause complications, as there can be subtle but irritating differences between
-              browser defaults which cause inconsistencies.
-              Developers also have to spend time undoing these presets to achieve their desired aesthetic.
+              To ensure <strong>legibility, responsive and accessible styling by default</strong>,
+              browsers ship with their own default stylesheet. Examples include heading font sizes
+              and the automatic styling of button elements.
             </li>
 
             <li>
-              Developers have 3 main approaches to overcome these issues, as outlined below:
+              Default CSS varies subtly between browsers, which can cause layout and styling
+              inconsistencies. Developers often spend time undoing these presets to achieve
+              consistent design.
+            </li>
+
+            <li>
+              Developers use three main approaches to overcome these issues:
               <table>
-                <caption>Table summarising the three approaches to overcoming default CSS styles. <a href="https://mattbrictson.com/blog/css-normalize-and-reset" target="_blank"
-                  rel="noopener noreferrer">Useful
-                  Explanation on CSS Reset and Normalize</a>
+                <caption>
+                  Summary of approaches to handling default CSS.
+                  <a href="https://mattbrictson.com/blog/css-normalize-and-reset"
+                    target="_blank" rel="noopener noreferrer">
+                    Useful explanation on CSS Reset and Normalize
+                  </a>
                 </caption>
 
                 <thead>
@@ -69,58 +78,64 @@
                     <th scope="col">Link to Code</th>
                     <th scope="col">Pros</th>
                     <th scope="col">Cons</th>
-  
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
                     <th scope="row">Normalize.css</th>
-                    <td>“Fix inconsistencies”: Designed to fix inconsistencies across browser style defaults whilst retaining useful features/semantics"
-                    </td>
-                    <td>Released: 2011 <br>Creators: Nicolas Gallagher and Jonathan Neal</td>
+                    <td>“Fix inconsistencies”: smooth out cross‑browser differences while preserving useful defaults and semantics.</td>
+                    <td>Released 2011<br>Creators: Nicolas Gallagher &amp; Jonathan Neal</td>
                     <td><a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener noreferrer">Normalize.css</a></td>
-                    <td>Preserves semantics so the user doesn't have to rewrite everything</td>
-                    <td>Doesn't give entire control/clean slate</td>
+                    <td>Preserves semantics; less destructive</td>
+                    <td>Doesn’t provide a full clean slate</td>
                   </tr>
+
                   <tr>
-                    <th scope="row">CSS Resets</th>
-                    <td>
-                      "Erase everything and start from scratch":
-                      Strip away essentially all CSS defaults across all browsers, providing a clean slate
-                      upon which to add CSS styling.
-                    </td>
-                    <td>Released: 2007 <br>Created by: Eric Meyer (widely accepted as standard)</td>
-                    <td><a href="https://meyerweb.com/eric/tools/css/reset/reset.css">Reset.css</a></td>
-                    <td>user defines entire CSS - has total control</td>
-                    <td>Destructive approach; eliminates useful CSS content that then needs to be reinserted</td>
+                    <th scope="row">CSS Reset</th>
+                    <td>“Erase everything”: remove nearly all browser defaults to create a blank canvas.</td>
+                    <td>Released 2007<br>Created by: Eric Meyer</td>
+                    <td><a href="https://meyerweb.com/eric/tools/css/reset/reset.css" target="_blank" rel="noopener noreferrer">Reset.css</a></td>
+                    <td>Total control; consistent baseline</td>
+                    <td>Overly destructive; removes helpful defaults</td>
                   </tr>
 
                   <tr>
                     <th scope="row">Hybrid</th>
-                    <td>"Fix + clean + modern defaults":Merges the two approaches; it fixes/removes cross-browser inconsistencies, removes unwanted
-                      styling and adds opinionated defaults it assumes are most widely accepted by today's dev standards (i.e. *{box-sizing: border-box;} or body{margin:0}). </td>
-                    <td>Term coined by Mark - Matt Brictson in 2023 but approach had been adopted by
-                      frameworks such as Tailwind prior to this.
-                    </td>
-                    <td>&nbsp;</td>
+                    <td>“Fix + clean + modern defaults”: combines normalize + reset + modern baseline rules (e.g., box‑sizing, margin resets, responsive images).</td>
+                    <td>Term popularised by Matt Brictson (2023); used earlier by frameworks like Tailwind.</td>
+                    <td>—</td>
                     <td>Modern, accessible, predictable</td>
-                    <td>Can be opinionated</td>
+                    <td>Opinionated</td>
                   </tr>
                 </tbody>
               </table>
             </li>
+
+            <li>
+              There is no universal agreement on which approach is best. Hybrid approaches are
+              considered the most modern and pragmatic, while full resets are often seen as too
+              destructive in contemporary development.
+            </li>
           </ol>
+
           <div class="accessibilityNotes">
-          <h2>Notes on Accessibility</h2>
-            <p>This <a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG Link</a> provides useful information on the required text spacing requirements
-              developers should conform to. I shall create my own <a href="https://github.com/Jade-Evans/Jades_Accessible_Stylesheet/blob/main/jades_accessible_stylesheet.css">accessible css stylesheet</a> with these in mind. 
+            <h2>Notes on Accessibility</h2>
+            <p>
+              This
+              <a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">
+                WCAG text‑spacing guideline
+              </a>
+              outlines minimum spacing requirements for accessible typography.
+              I am creating my own
+              <a href="https://github.com/Jade-Evans/Jades_Accessible_Stylesheet/blob/main/jades_accessible_stylesheet.css">
+                accessible CSS stylesheet
+              </a>
+              with these in mind.
             </p>
-          
+          </div>
         </div>
       </section>
-       
-      
     </main>
     <footer>
       <p>🌱SKILLROOTS &copy; 2026</p>
