@@ -23,11 +23,24 @@
   <main>
      <aside>
         <div id="dashboardSideBar">
-            <ul id="dashboardToolKit">
+        <ul id="dashboardToolKit">
 
-            </ul>
+            <input type="checkbox" class="dashboardTool" id="tool1" name="tool1" value="progressTable">
+            <label for="tool1">Progress Table</label><br>
 
+            <input type="checkbox" class="dashboardTool" id="tool2" name="tool2" value="calendar">
+            <label for="tool2">Calendar</label><br>
 
+            <input type="checkbox" class="dashboardTool" id="tool3" name="tool3" value="notepad">
+            <label for="tool3">Notepad</label><br>
+
+            <input type="checkbox" class="dashboardTool" id="tool4" name="tool4" value="checklist">
+            <label for="tool4">Checklist</label><br>
+
+            <input type="checkbox" class="dashboardTool" id="tool5" name="tool5" value="quote">
+            <label for="tool5">Quote of the Day</label><br>
+
+        </ul>
         </div>
      </aside>
      <section id="dashboardSection">
@@ -35,32 +48,36 @@
             <h1 class="pageHeader">LEARNING DASHBOARD</h1>
             <h3 class="pageIntro">Welcome to your own personal learning dashboard!</h3>
         </hgroup>
-        <div id="curriculumBuilder" >
-            <h2 class="dashboardTool">CURRICULUM BUILDER</h2>
-            <div class="introText">
-                <p>The great thing about learning independently is being able to choose from the wealth of
-                    resources available to us.<p> 
-                <p>The table below allows you to develop a curriculum based on your specific requirements, 
-                    and keep a record of your learning, without being restricted to one course. </p>
-                <p>Click "Create New Module" to get started. </p>
+        <div id="dashboardWorkspace">
+            <div id="progressTable" >
+                <h2 class="dashboardTool">Progress Table</h2>
+                <div class="introText">
+                    <p>The great thing about learning independently is being able to choose from the wealth of
+                        resources available to us.<p> 
+                    <p>The table below allows you to develop a curriculum based on your specific requirements, 
+                        and keep a record of your learning, without being restricted to one course. </p>
+                    <p>Click "Create New Module" to get started. </p>
+                </div>
+                
+            
+                <table id="curriculumBuilderTable">
+                    <caption>Learning Progress Tracker</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Module</th>
+                    <th scope="col">section</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Progress</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Notes</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                    
+                </table>
+                <button id="createNewModule">Create New Module</button>
             </div>
-            <button id="createNewModule">Create New Module</button>
-        <div class="tableWrapper">
-            <table id="curriculumBuilderTable">
-                <caption>Learning Progress Tracker</caption>
-            <thead>
-            <tr>
-                <th scope="col">Module</th>
-                <th scope="col">section</th>
-                <th scope="col">Course</th>
-                <th scope="col">Progress</th>
-                <th scope="col">Date</th>
-                <th scope="col">Notes</th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+            
         </div>
     </section>
   </main>
