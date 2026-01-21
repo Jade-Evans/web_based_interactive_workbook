@@ -1,7 +1,20 @@
 const dashboardToolsArray = Array.from(document.querySelectorAll(".dashboardTool"));
 const dashboardToolKit = document.querySelector("#dashboardToolKit");
-
-
+function updateDateTimeEachSecond(){
+    const currentDateTime = new Date();
+    readableDateTime= currentDateTime.toLocaleString("en-GB");
+    const dateTime = document.querySelector("#currentDateTime");
+    dateTime.textContent = readableDateTime;
+}
+updateDateTimeEachSecond();
+setInterval(updateDateTimeEachSecond, 1000);
+//Pikaday Calendar logic:
+const picker = new Pikaday({
+  field: document.getElementById('calendarInput'),
+  format: 'D MMM YYYY',
+  firstDay: 1, // Monday start (UK-friendly)
+  theme: 'dark-theme', // optional custom class
+});
     
     
     //    <caption>Learning Progress Tracker</caption>

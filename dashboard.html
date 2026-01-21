@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -39,6 +41,7 @@
         </div>
      </aside>
      <section id="dashboardSection">
+        <div id="currentDateTime"></div>
         <hgroup>
             <h1 class="pageHeader">LEARNING DASHBOARD</h1>
             <h3 class="pageIntro">Welcome to your own personal learning dashboard!</h3>
@@ -72,6 +75,8 @@
                 </table>
                 <button id="createNewModule">Create New Module</button>
             </div>
+            <input type="text" id="calendarInput" placeholder="Select a date">
+
             
         </div>
     </section>
