@@ -39,13 +39,18 @@ newModuleBtn.addEventListener("click",()=>{
         <td><input type="date" name="dateUpdate"></td>
 
         <td>
-            <textarea name="notes"></textarea>
+            <label for="noteCheckbox"></label><br>
+            <input type="checkbox" class="dailyNoteChecked" id="tool3" name="check" value="dailyNotes">
             
-        </td>`;
+        </td>
+        <td><button>Save</button></th>`;
     tbody.appendChild(newModuleRow);
-    const saveEditToggle = document.createElement("button");
-    saveEditToggle.textContent="Save";
-    progressTableButtons.appendChild(saveEditToggle);
+    
+        const saveEditToggle = document.createElement("button");
+        saveEditToggle.textContent="Save";
+    if(!saveEditToggle){
+        progressTableButtons.appendChild(saveEditToggle);
+    }
 
 
 });
