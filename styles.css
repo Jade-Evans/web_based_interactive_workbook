@@ -32,6 +32,13 @@ main{
     flex: 1; /*enables main to take up the rest of the available space of body container*/
     overflow: hidden;/*main stays fixed and houses the aside/section that scroll*/
 }
+#landingPageMain{
+    justify-content: center;
+    align-items: center;
+}
+#landingPageTagline{
+    margin: 0;
+}
 aside{
     flex:1;
     background-color: rgb(77, 111, 99);
@@ -121,8 +128,8 @@ hgroup{
     margin: 1rem;
 }
 
-/*INDEX/LANDING PAGE CSS*/
-/* #landingPageContent{
+/* INDEX/LANDING PAGE CSS */
+#landingPageContent{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,11 +140,8 @@ hgroup{
     padding: 3rem;
     margin: 8rem 6rem;
     border-radius: 1rem;
-    flex: 1;
 }
-#landingPageContent p, #landingPageContent h1, #landingPageContent h2{
-    flex-shrink: 2;
-}
+
 #landingPageHeader{
     font-size: 6rem;
     font-weight:100;
@@ -151,7 +155,6 @@ hgroup{
     display: flex;
     gap: 1.5rem;
     margin-top: 3rem;
-    flex-shrink: 1;
 }
 
 .landingPageButtonDiv button{
@@ -172,7 +175,7 @@ nav-bar a, .landingPageButtonDiv button:hover{
 }
 .subheading{
     margin: 1rem;
-} */
+} 
 
 /*Module Template*/
 /* #template_container{

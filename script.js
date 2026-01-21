@@ -1,11 +1,7 @@
 const dashboardToolsArray = Array.from(document.querySelectorAll(".dashboardTool"));
 const dashboardToolKit = document.querySelector("#dashboardToolKit");
 
-dashboardToolsArray.forEach(tool =>{
-    let newTool = document.createElement("li");
-    newTool.textContent = tool.textContent;
-    dashboardToolKit.appendChild(newTool);  
-})    
+
     
     
     //    <caption>Learning Progress Tracker</caption>
