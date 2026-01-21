@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <title>welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Jade-Evans/Jades_Accessible_Stylesheet/main/jades_accessible_stylesheet.css">
+    <title>dashboard</title>
 </head>
 <body>
   <header>
@@ -24,22 +25,16 @@
      <aside>
         <div id="dashboardSideBar">
         <ul id="dashboardToolKit">
-
             <input type="checkbox" class="dashboardTool" id="tool1" name="tool1" value="progressTable">
             <label for="tool1">Progress Table</label><br>
-
             <input type="checkbox" class="dashboardTool" id="tool2" name="tool2" value="calendar">
             <label for="tool2">Calendar</label><br>
-
-            <input type="checkbox" class="dashboardTool" id="tool3" name="tool3" value="notepad">
-            <label for="tool3">Notepad</label><br>
-
-            <input type="checkbox" class="dashboardTool" id="tool4" name="tool4" value="checklist">
-            <label for="tool4">Checklist</label><br>
-
+            <input type="checkbox" class="dashboardTool" id="tool3" name="tool3" value="followUpNotes">
+            <label for="tool3">Follow Up Notes</label><br>
+            <input type="checkbox" class="dashboardTool" id="tool4" name="tool4" value="wellbeingChecklist">
+            <label for="tool4">Wellbeing Checklist</label><br>
             <input type="checkbox" class="dashboardTool" id="tool5" name="tool5" value="quote">
-            <label for="tool5">Quote of the Day</label><br>
-
+            <label for="tool5">Motivational Quote of the Day</label><br>
         </ul>
         </div>
      </aside>
@@ -50,7 +45,7 @@
         </hgroup>
         <div id="dashboardWorkspace">
             <div id="progressTable" >
-                <h2 class="dashboardTool">Progress Table</h2>
+                <h2 class="progressTableHeader">Progress Table</h2>
                 <div class="introText">
                     <p>The great thing about learning independently is being able to choose from the wealth of
                         resources available to us.<p> 
