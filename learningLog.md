@@ -15,3 +15,6 @@ I used width 100% to stretch the footer along the whole length of the window, an
 
 ## CREATE A RESPONSIVE LAYOUT WITH SIDEBAR
 https://kinsta.com/blog/responsive-web-design/
+
+## RESOURCES FOR CREATING UK DATE AND TIME
+https://stackoverflow.com/questions/53862778/how-to-get-the-current-london-time-and-date-using-javascript
