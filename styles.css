@@ -28,14 +28,24 @@ footer{
     justify-content: center;
     bottom: 0;   
 }
+.currentDateTime{
+    justify-self: flex-end;
+    margin: 0.5rem;
+    font-weight: 200;
+    font-size: 1.25rem;
+}
 main{
     display: flex;
     flex: 1; /*enables main to take up the rest of the available space of body container*/
     overflow: hidden;/*main stays fixed and houses the aside/section that scroll*/
 }
 #landingPageMain{
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
+}
+#landingPagecurrentDateTime{
+    align-self: flex-end;
 }
 #landingPageTagline{
     margin: 0;
@@ -146,8 +156,8 @@ hgroup{
     background-color: rgb(197, 211, 205);
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
     color:rgb(61, 75, 70);
-    padding: 4rem 5rem;
-    margin: 4rem;
+    padding: 3rem 4rem;
+    margin: 1rem 0 1.5rem;
     border-radius: 1rem;
 }
 

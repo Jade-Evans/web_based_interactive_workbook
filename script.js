@@ -3,7 +3,7 @@ const dashboardToolKit = document.querySelector("#dashboardToolKit");
 function updateDateTimeEachSecond(){
     const currentDateTime = new Date();
     readableDateTime= currentDateTime.toLocaleString("en-GB");
-    const dateTime = document.querySelector("#currentDateTime");
+    const dateTime = document.querySelector(".currentDateTime");
     dateTime.textContent = readableDateTime;
 }
 updateDateTimeEachSecond();
