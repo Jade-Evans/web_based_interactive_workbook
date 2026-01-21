@@ -21,31 +21,47 @@
     </ul>
   </header>
   <main>
-     <aside></aside>
-    <section id="dashboardSection">
-    <hgroup>
-      <h1 class="pageHeader">LEARNING DASHBOARD</h1>
-      <h3 class="pageIntro">Welcome to your own personal learning dashboard!
-      </p>
-    </hgroup>
-    <div id="curriculumBuilder">
-        <h2 class="subheading">CURRICULUM BUILDER</h2>
-        <div class="introText">
-          <p>The great thing about learning independently is being able to choose from the wealth of
-            resources available to us.<br> 
-            The table below allows you to develop a curriculum based on your specific requirements, 
-            and keep a record of your learning, without being restricted to one course. <br>
-            Click "Create New Module" to get started. </p>
-          </div>
-          <button id="createNewModule">Create New Module</button>
-      <div class="tableWrapper">
-        <table id="curriculumBuilderTable">
+     <aside>
+        <div id="dashboardSideBar">
+            <ul id="dashboardToolKit">
 
-   
-          <tbody></tbody>
-        </table>
-      </div>
-    </div>
+            </ul>
+
+
+        </div>
+     </aside>
+     <section id="dashboardSection">
+        <hgroup>
+            <h1 class="pageHeader">LEARNING DASHBOARD</h1>
+            <h3 class="pageIntro">Welcome to your own personal learning dashboard!</h3>
+        </hgroup>
+        <div id="curriculumBuilder" >
+            <h2 class="dashboardTool">CURRICULUM BUILDER</h2>
+            <div class="introText">
+                <p>The great thing about learning independently is being able to choose from the wealth of
+                    resources available to us.<p> 
+                <p>The table below allows you to develop a curriculum based on your specific requirements, 
+                    and keep a record of your learning, without being restricted to one course. </p>
+                <p>Click "Create New Module" to get started. </p>
+            </div>
+            <button id="createNewModule">Create New Module</button>
+        <div class="tableWrapper">
+            <table id="curriculumBuilderTable">
+                <caption>Learning Progress Tracker</caption>
+            <thead>
+            <tr>
+                <th scope="col">Module</th>
+                <th scope="col">section</th>
+                <th scope="col">Course</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Date</th>
+                <th scope="col">Notes</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        </div>
     </section>
   </main>
   <footer>
