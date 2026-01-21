@@ -1,12 +1,14 @@
+*{
+    font-family: montserrat;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
 body {
   display: flex;
   flex-direction: column;
   height: 100vh; /*take full height of viewport on any device*/
-  overflow: hidden; /*prevents entire page from scrolling (which would scroll h & f - not desired*/
-  font-family: montserrat;
-  font-weight: 100;
-  margin: 0;
-  padding: 0;
+  overflow: hidden; /*prevents entire page from scrolling (which would scroll h & f - not desired*/  
 }
 header, footer {
     z-index: 10;/*keeps h & f above rest of content*/
@@ -15,8 +17,7 @@ header, footer {
     align-items: center;
     color: white;
     background-color: rgb(61, 75, 70);
-    
-    padding: 0.25rem;
+    padding: 1rem;
 }
 
 header{
@@ -89,6 +90,20 @@ section{
     transition: 0.05s ease;
 }
 
+button{
+    padding: 0.5rem 0.75rem;
+    font-size: 1em;
+    font-weight: 200;
+    color: white;
+    background-color: rgb(61, 75, 70);
+    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
+    border-radius: 0.5rem;
+}
+button:hover{
+    background-color: rgb(35, 43, 40);
+    transition: 0.3s ease;
+}
+
 /*DASHBOARD*/
 
 .dashboardTool{
@@ -96,12 +111,6 @@ section{
     border-radius: 0.5rem;
     margin: 0.25rem;
     padding: 0.5rem;
-}
-.dashboardTool:hover{
-     font-weight: 400;
-    background-color: rgb(113, 162, 145);
-    transition: 0.02s ease;
-
 }
 
 #progressTable{
@@ -137,8 +146,8 @@ hgroup{
     background-color: rgb(197, 211, 205);
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
     color:rgb(61, 75, 70);
-    padding: 3rem;
-    margin: 8rem 6rem;
+    padding: 4rem 5rem;
+    margin: 4rem;
     border-radius: 1rem;
 }
 
@@ -157,18 +166,10 @@ hgroup{
     margin-top: 3rem;
 }
 
-.landingPageButtonDiv button{
-    padding: 0.5rem 0.75rem;
-    font-size: 1em;
-    font-weight: 200;
-    color: white;
-    background-color: rgb(61, 75, 70);
-    box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
-    border-radius: 1rem;
-}
 
-nav-bar a, .landingPageButtonDiv button:hover{
-    font-weight: 400;
+
+nav-bar a, #dashboardToolKit label:hover, button:hover{
+    font-weight: 200;
     background-color: rgb(41, 46, 45);
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(71, 78, 78);
     transition: 0.1s ease;
