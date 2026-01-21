@@ -10,14 +10,14 @@
 </head>
 <body>
   <header>
-    <div class="logo">Interactive WorkBook</div>
+    <div class="logo">🌱SKILLROOTS</div>
     <nav>
         <ul class ="nav-bar">
-            <li><a  href = "index.html">home</a></li>
-            <li><a  href = "00_contents.html">dashboard</a></li>
-            <li><a  href = "XlearningJournal.html">journal</a></li>
-            <li><a  href="Yresources.html">resources</a></li>
-            <li><a  href="Zsettings.html">preferences</a></li>
+          <li><a  href = "index.html">🌿home</a></li>
+          <li><a  href = "00_contents.html">🌿dashboard</a></li>
+          <li><a  href = "XlearningJournal.html">🌿growth journal</a></li>
+          <li><a  href="Yresources.html">🌿library</a></li>
+          <li><a  href="Zsettings.html">🌿settings</a></li>
         </ul>
     </nav>
   </header>
@@ -41,80 +41,82 @@
             over time you can build up a sense of whether certain resources/methods are 
             more suitable to you using the charts below. </p>
           </div>
-      <table id="curriculumBuilderTable">
-        <caption>Learning Progress Tracker</caption>
-        <thead>
-          <tr>
-            <th scope="col">Module</th>
-            <th scope="col">section</th>
-            <th scope="col">Course</th>
-            <th scope="col">Progress</th>
-            <th scope="col">Date</th>
-            <th scope="col">Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="01_emmet.html">Emmet</a></th>
-            <td>Intermediate HTML Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>
-          <tr>
-            <td><a href="02_svg.html">SVGs</a></th>
-            <td>Intermediate HTML Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>
-          <tr>
-            <td><a href="03_tables.html">Tables</a></th>
-            <td>Intermediate HTML Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>  
-           <td><a href="04_defaultCSS.html">Default CSS</a></th>
-            <td>Intermediate CSS Concepts</td>
-            <td>The Odin Project JS Path</td>
-            <td><fieldset id="progressOptions" class="options hidden">
-                  <select id="progressOptions" name="progressOptions">
-                      <option value="notStarted">Not Started</option>
-                      <option value="inProgress">In Progress</option>
-                      <option value="needsReview">Lesson Needs Review</option>
-                      <option value="confident">Lesson Complete: Confident</option>
-                  </select>
-              </fieldset></td>
-              <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
-            <td><textarea name="notes"></textarea></td>
-          </tr>  
-        </tbody>
-      </table>
+      <div class="tableWrapper">
+        <table id="curriculumBuilderTable">
+          <caption>Learning Progress Tracker</caption>
+          <thead>
+            <tr>
+              <th scope="col">Module</th>
+              <th scope="col">section</th>
+              <th scope="col">Course</th>
+              <th scope="col">Progress</th>
+              <th scope="col">Date</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="01_emmet.html">Emmet</a></td>
+              <td>Intermediate HTML Concepts</td>
+              <td>The Odin Project JS Path</td>
+              <td><fieldset id="progressOptions" class="options hidden">
+                    <select id="progressOptions" name="progressOptions">
+                        <option value="notStarted">Not Started</option>
+                        <option value="inProgress">In Progress</option>
+                        <option value="needsReview">Lesson Needs Review</option>
+                        <option value="confident">Lesson Complete: Confident</option>
+                    </select>
+                </fieldset></td>
+                <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
+              <td><textarea name="notes"></textarea></td>
+            </tr>
+            <tr>
+              <td><a href="02_svg.html">SVGs</a></td>
+              <td>Intermediate HTML Concepts</td>
+              <td>The Odin Project JS Path</td>
+              <td><fieldset id="progressOptions" class="options hidden">
+                    <select id="progressOptions" name="progressOptions">
+                        <option value="notStarted">Not Started</option>
+                        <option value="inProgress">In Progress</option>
+                        <option value="needsReview">Lesson Needs Review</option>
+                        <option value="confident">Lesson Complete: Confident</option>
+                    </select>
+                </fieldset></td>
+                <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
+              <td><textarea name="notes"></textarea></td>
+            </tr>
+            <tr>
+              <td><a href="03_tables.html">Tables</a></td>
+              <td>Intermediate HTML Concepts</td>
+              <td>The Odin Project JS Path</td>
+              <td><fieldset id="progressOptions" class="options hidden">
+                    <select id="progressOptions" name="progressOptions">
+                        <option value="notStarted">Not Started</option>
+                        <option value="inProgress">In Progress</option>
+                        <option value="needsReview">Lesson Needs Review</option>
+                        <option value="confident">Lesson Complete: Confident</option>
+                    </select>
+                </fieldset></td>
+                <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
+              <td><textarea name="notes"></textarea></td>
+            </tr>  
+            <td><a href="04_defaultCSS.html">Default CSS</a></td>
+              <td>Intermediate CSS Concepts</td>
+              <td>The Odin Project JS Path</td>
+              <td><fieldset id="progressOptions" class="options hidden">
+                    <select id="progressOptions" name="progressOptions">
+                        <option value="notStarted">Not Started</option>
+                        <option value="inProgress">In Progress</option>
+                        <option value="needsReview">Lesson Needs Review</option>
+                        <option value="confident">Lesson Complete: Confident</option>
+                    </select>
+                </fieldset></td>
+                <td><input type="date" name="dateUpdate" id="dateUpdated"></td>
+              <td><textarea name="notes"></textarea></td>
+            </tr>  
+          </tbody>
+        </table>
+      </div>
     </div>
     </section>
   </main>
