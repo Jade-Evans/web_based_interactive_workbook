@@ -134,6 +134,13 @@ button:hover{
     margin: 1rem;
     padding: 1rem; 
 }
+#progressTable{
+    min-width: 0;
+}
+#progressTableButtons{
+    display: flex;
+    gap: 0.75rem;
+}
 
 hgroup{
     display: flex;
@@ -327,6 +334,9 @@ table{
   border-collapse: collapse;
   box-shadow: 0.5rem 0.5rem 0.95rem rgb(71, 78, 78);
   margin: 1rem;
+  width: 100%;
+  table-layout: fixed;
+
 }
 caption{
     margin: 1%;
@@ -337,7 +347,9 @@ caption{
 
 td,th{
     border-style: none;
-    padding: 1rem;
+    padding: 0.25rem;
+    flex-shrink: 1;
+    max-width: fit-content;
 }
 td{
     background-color: white;   
@@ -347,9 +359,7 @@ th{
     font-weight: 400;
     text-align: center;
 }
-.column-fixed-width{
-    width: 4rem;
-}
+
     
             
 

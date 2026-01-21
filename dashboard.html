@@ -31,8 +31,8 @@
             <label for="tool1">Progress Table</label><br>
             <input type="checkbox" class="dashboardTool" id="tool2" name="tool2" value="calendar">
             <label for="tool2">Calendar</label><br>
-            <input type="checkbox" class="dashboardTool" id="tool3" name="tool3" value="followUpNotes">
-            <label for="tool3">Follow Up Notes</label><br>
+            <input type="checkbox" class="dashboardTool" id="tool3" name="tool3" value="dailyNotes">
+            <label for="tool3">Daily Notes</label><br>
             <input type="checkbox" class="dashboardTool" id="tool4" name="tool4" value="wellbeingChecklist">
             <label for="tool4">Wellbeing Checklist</label><br>
             <input type="checkbox" class="dashboardTool" id="tool5" name="tool5" value="quote">
@@ -58,9 +58,12 @@
                 </div>
                 
             
-                <table id="curriculumBuilderTable">
+                <table id="progressTable">
                     <caption>Learning Progress Tracker</caption>
                 <thead>
+                    <colgroup>
+                        <col span="6" class="column-fixed-width">
+                    </colgroup>
                 <tr>
                     <th scope="col">Module</th>
                     <th scope="col">section</th>
@@ -70,10 +73,12 @@
                     <th scope="col">Notes</th>
                     </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody id="progressTableBody"></tbody>
                     
                 </table>
-                <button id="createNewModule">Create New Module</button>
+                <div id="progressTableButtons">
+                    <button id="createNewModule">Create New Module</button>
+                </div>
             </div>
             <div id="calendar" class="dashboardWidget">
                 <h2 class="dashboardWidgetHeaders">Calendar</h2>
