@@ -89,13 +89,16 @@ hgroup{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5rem 0.5rem 2rem;
+    margin: 0.5rem;
 }
 .pageHeader{
     font-size: 3.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
+}
+.pageIntro{
+    margin: 0.25rem;
 }
 .virtualWorkspaceHeader{
     font-size: 1.5rem;
