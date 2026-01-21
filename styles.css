@@ -123,7 +123,7 @@ button:hover{
     padding: 0.5rem;
 }
 
-#progressTable{
+.dashboardWidget{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,16 +297,7 @@ nav-bar a, #dashboardToolKit label:hover, button:hover{
     list-style-position: inside;
     
 } 
-table {
-  border-collapse: collapse;
-  box-shadow: 0.5rem 0.5rem 0.95rem rgb(71, 78, 78);
-}
-caption{
-    margin: 1%;
-    color:rgb(40, 65, 57);
-    font-size: 2rem;
-    font-weight: 400;
-} */
+
 
 /*PRACTICAL EXERCISES*/
 /*02-SVG*/
@@ -330,13 +321,19 @@ caption{
     background-color: lightblue;
 } */
 
-/*03-TABLES*/
-/* table{
-    background-color: white;
-    border-style:none;
-
-    margin: 1.5rem 0rem;
+/* 03-TABLES*/
+table{
+  background-color: white;
+  border-collapse: collapse;
+  box-shadow: 0.5rem 0.5rem 0.95rem rgb(71, 78, 78);
+  margin: 1rem;
 }
+caption{
+    margin: 1%;
+    color:rgb(40, 65, 57);
+    font-size: 2rem;
+    font-weight: 400;
+} 
 
 td,th{
     border-style: none;
@@ -350,16 +347,10 @@ th{
     font-weight: 400;
     text-align: center;
 }
-.column-background{
-    background-color: rgb(222, 201, 222);
-}
 .column-fixed-width{
-    width: 2rem;
-} */
+    width: 4rem;
+}
     
             
-/* .column-background-border{
-    background-color: lightblue;
-    border: solid 0.5rem blue;
-} */ 
+
 
