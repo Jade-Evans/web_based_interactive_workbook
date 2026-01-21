@@ -47,8 +47,8 @@
             <h3 class="pageIntro">Welcome to your own personal learning dashboard!</h3>
         </hgroup>
         <div id="dashboardWorkspace">
-            <div id="progressTable" >
-                <h2 class="progressTableHeader">Progress Table</h2>
+            <div id="progressTable" class="dashboardWidget">
+                <h2 class="dashboardWidgetHeaders">Progress Table</h2>
                 <div class="introText">
                     <p>The great thing about learning independently is being able to choose from the wealth of
                         resources available to us.<p> 
@@ -75,8 +75,13 @@
                 </table>
                 <button id="createNewModule">Create New Module</button>
             </div>
-            <input type="text" id="calendarInput" placeholder="Select a date">
-
+            <div id="calendar" class="dashboardWidget">
+                <h2 class="dashboardWidgetHeaders">Calendar</h2>
+                <div class="introText">
+                    <p>Calendars are useful. Time Management is crucial for independent learning and future careers.<p>
+                </div>
+                <input type="text" id="calendarInput" placeholder="Select a date">
+            </div>
             
         </div>
     </section>
