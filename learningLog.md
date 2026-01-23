@@ -18,3 +18,6 @@ https://kinsta.com/blog/responsive-web-design/
 
 ## RESOURCES FOR CREATING UK DATE AND TIME
 https://stackoverflow.com/questions/53862778/how-to-get-the-current-london-time-and-date-using-javascript
+
+## CREATING A MODAL
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
