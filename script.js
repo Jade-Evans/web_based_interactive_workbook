@@ -17,6 +17,19 @@ const dashboardWorkspace = document.getElementById("dashboardWorkspace");
 const progressTable = document.getElementById("progressTable");
 const progressTableButtons = document.getElementById("progressTableButtons");
 const newModuleBtn = document.getElementById("createNewModule");
+const loginBtn = document.getElementById("loginButton");
+const signupBtn = document.getElementById("signupButton");
+const signupModal = document.getElementById("signupModal");
+const loginModal = document.getElementById("loginModal");
+const landingPageMain = document.getElementById("landingPageMain");
+
+//login modal box appears on click
+loginBtn.addEventListener("click",()=>{
+    loginModal.style.display="flex";
+})
+signupBtn.addEventListener("click",()=>{
+    signupModal.style.display="flex";
+})
 
 newModuleBtn.addEventListener("click",()=>{
     const tbody = document.getElementById("progressTableBody");
