@@ -21,18 +21,39 @@
         <li><a  href="modules_template.html">🌿module template</a></li>
     </ul>
   </header>
+  <div class="overlayWrapper"></div>
   <main id="landingPageMain">
     <div id="landingPagecurrentDateTime" class="currentDateTime"></div>
     <div id="landingPageContent">
       <p font-size="5rem">Welcome to</p>
       <h1 id="landingPageHeader">SKILLROOTS</h1>
       <h2 id="landingPageTagline">Learn independently 🌱 Grow intentionally</h2>
-      <div class="landingPageButtonDiv">
-        <button class="signup">Sign Up</button>
-        <button class="login">Log In</button>
+      <div class="modalButtonsDiv">
+        <button id="signupButton">Sign Up</button>
+        <button id="loginButton">Log In</button>
       </div>
     </div>
-  </main>
+  
+    <div id="signupModal" class="modal">
+      <div class="modalContent">
+        <span class="close">&times;</span>
+        <h2>Welcome to Skillroots!</h2>
+        <p>Ready to start learning?</p>
+        <p>Just enter your details below and click the Login button:</p>
+        <label for="username">Username:</label>
+        <input type="text" id="usernameInput" placeholder="Create Username" required>
+        <label for="password">Password:</label>
+        <input type="text" id="passwordInput" placeholder="Create Password" required>
+        <label for="fName">First Name:</label>
+        <input type="text" id="firstnameInput" placeholder="Enter first name" required>
+        <label for="sName">Surname:</label>
+        <input type="text" id="surnameInput" placeholder="Enter Surname" required>
+      </div>
+    </main>
+  </div>
+
+  
+  <!-- <div id="loginModal" class="modal"></div> -->
   <footer>
     <p>🌱SKILLROOTS &copy; 2026</p>
   </footer>
