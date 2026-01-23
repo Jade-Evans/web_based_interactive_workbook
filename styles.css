@@ -43,12 +43,47 @@ main{
     flex-direction: column;
     align-content: center;
     align-items: center;
+    z-index: 1;
+}
+#landingPageContent{
+    z-index: 1;
+}
+.overlayWrapper{
+  position: fixed; /* Sit on top of the page content */
+  display: none; 
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 12; /
 }
 #landingPagecurrentDateTime{
     align-self: flex-end;
 }
 #landingPageTagline{
     margin: 0;
+}
+/*sign in/log in modals*/
+.modal{
+    display:none;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    top: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    z-index: 3;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,78,0.4); /* Black w*/
+
+}
+.modalContent{
+    width: 80%;
 }
 aside{
     flex:1;
@@ -61,17 +96,6 @@ aside{
     box-shadow: 0.5rem 0.5rem 0.95rem rgb(133, 146, 146);
     
 }
-#toolkit{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-#toolkit li:hover{
-    background-color: rgb(45, 63, 57);
-    
-
-}
-
 section{
     flex:4;
     overflow-y: auto;
@@ -115,6 +139,9 @@ button:hover{
 }
 
 /*DASHBOARD*/
+#dashboardToolKit{
+    padding: 0.75rem;
+}
 
 .dashboardTool{
     list-style-type: none;
@@ -133,6 +160,12 @@ button:hover{
     border-radius: 1rem;
     margin: 1rem;
     padding: 1rem; 
+}
+.smallerWidget{
+    max-width:max-content;
+    min-width: min-content;
+
+
 }
 #progressTable{
     min-width: 0;
